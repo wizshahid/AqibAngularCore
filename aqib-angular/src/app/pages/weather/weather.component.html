@@ -1,0 +1,20 @@
+<h2>Weather Forecast</h2>
+
+<table>
+  <thead>
+    <tr>
+      <td>Date</td>
+      <td>Temp Cel</td>
+      <td>Temp Fer</td>
+      <td>Summary</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of weatherList">
+      <td>{{ item.date }}</td>
+      <td>{{ item.temperatureC }}</td>
+      <td>{{ item.temperatureF }}</td>
+      <td>{{ item.summary }}</td>
+    </tr>
+  </tbody>
+</table>
